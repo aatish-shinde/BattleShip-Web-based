@@ -1,0 +1,178 @@
+/* Main chat container */
+
+#chatContainer{
+	width:510px;
+	margin:100px auto;
+	position:relative;
+}
+
+
+/* Top Bar */
+#start{
+	height:20px;
+	width:300px;
+	margin:30px auto;
+	background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+	border:1px solid #fff;
+	margin-bottom:10px;
+	position:relative;
+	color:#777;
+	text-shadow:1px 1px 0 #FFFFFF;
+}
+
+#chatTopBar{
+	height:40px;
+	background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+	border:1px solid #fff;
+	margin-bottom:15px;
+	position:relative;
+	
+	color:#777;
+	text-shadow:1px 1px 0 #FFFFFF;
+}
+
+#chatTopBar .name{
+	position:absolute;
+	top:10px;
+	left:40px;
+}
+
+#chatTopBar img{
+	left:9px;
+	position:absolute;
+	top:8px;
+}
+
+
+/* Chats */
+
+
+#chatLineHolder{
+	height:360px;
+	width:350px;
+	margin-bottom:20px;
+	background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+	color:black;
+}
+
+/* Chat User Area */
+
+
+#chatUsers{
+	background-color:#202020;
+	border:1px solid #111111;
+	height:360px;
+	position:absolute;
+	right:0;
+	top:56px;
+	width:150px;
+}
+
+/* Bottom Bar */
+
+
+#chatBottomBar{
+	background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+	position:relative;
+	padding:10px;
+	border:1px solid #fff;
+}
+
+#chatBottomBar .tip{
+	position:absolute;
+	width:0;
+	height:0;
+	border:10px solid transparent;
+	border-bottom-color:#eeeeee;
+	top:-20px;
+	left:20px;
+}
+
+#submitForm{
+	display:none;
+}
+
+.chatText{
+	/* The chat submit text field */
+	width:500px;
+}
+
+/* Additional styles */
+
+
+#logoutButton{
+	background-color:#bbb;
+	border:1px solid #eee !important;
+	color:#FFFFFF !important;
+	font-size:12px;
+	padding:5px 9px;
+	position:absolute;
+	right:10px;
+	text-shadow:1px 1px 0 #888;
+	top:7px;
+	
+	-moz-box-shadow:0 0 7px #888 inset;
+	-webkit-box-shadow:0 0 7px #888 inset;
+	box-shadow:0 0 7px #888 inset;
+}
+
+#logoutButton{
+	cursor:pointer;
+	text-shadow:1px 1px 0 #888;
+	
+	-moz-box-shadow:0 0 7px #666 inset;
+	-webkit-box-shadow:0 0 7px #666 inset;
+	box-shadow:0 0 7px #666 inset;
+}
+
+.rounded{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+#chatText {
+	background-color: #fff;
+	height: 35px;
+	width: 300px;
+	padding: 5px;
+	overflow: auto;
+}
+
+#send {
+	height: 36px;
+	width: 40px;
+}
+
+.error{
+display:none;
+padding:10px;
+font-weight:bold;
+}
+
+.buttonLink {
+	border:0;
+    width:150px;
+    color:#DDDDDD; /* Match your link colour */
+    background:transparent;
+    font:inherit; /* Inherit font settings (doesn’t work in IE7-) */
+    line-height:normal; /* Override line-height to avoid spacing issues */
+    cursor:pointer; /* Buttons don’t make the cursor change in all browsers */
+    -moz-user-select:text; /* Make button text selectable in Gecko */
+}
+
+/* Make sure keyboard users get visual feedback */
+.buttonLink:hover{
+    color:#DDDDDD;
+    background:transparent;
+	text-decoration:underline;
+	border:1px solid #0000ff;
+}
+
+/* Remove mystery padding in Gecko browsers.
+ * See https://bugzilla.mozilla.org/show_bug.cgi?id=140562
+*/
+ .buttonLink::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
